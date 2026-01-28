@@ -1,6 +1,8 @@
 # E-Commerce Revenue Optimization: End-to-End Analytics
 
-## Project Narrative
+## Problem Statement: How can an e-commerce company increase revenue and improve customer retention by understanding purchasing behavior and predicting future order value?
+
+## Project Overview
 In the modern e-commerce landscape, the ability to convert raw transactional data into high-impact business strategy is a primary competitive advantage. This project chronicles the journey of taking a disorganized e-commerce dataset and transforming it into a predictive powerhouse.
 
 The core goal was to move beyond simple reporting and answer a fundamental business question:  
