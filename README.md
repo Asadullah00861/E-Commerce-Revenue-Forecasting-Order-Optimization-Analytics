@@ -45,37 +45,6 @@ Developed in a hybrid **Jupyter Notebook** and **VS Code** environment, the pred
 - **Order Status Prediction (Classification)**: Predicting whether an order will be successfully completed.  
 - **Analytical Judgment**: Prioritized business utility over algorithmic complexity. Where predictive performance was limited, I evaluated the limitations to ensure analytical maturity.
 
-## Project Structure
-The following structure illustrates the organization of data, notebooks, and SQL scripts:
-
-## Project Structure
-The following structure illustrates the organization of data, notebooks, and SQL scripts:
-
-ecommerce-project/
-├── data/
-│ ├── ecommerce_dataset_updated.csv # Primary raw dataset
-│ ├── dim_customer.csv # Dimension table: Customer details
-│ ├── dim_product.csv # Dimension table: Product attributes
-│ ├── dim_date.csv # Dimension table: Time attributes
-│ ├── dim_payment.csv # Dimension table: Payment methods
-│ ├── fact_orders.csv # Fact table: Order-level metrics
-│ ├── fact_sales.csv # Fact table: Transactional sales data
-│ ├── discount_effectiveness_summary.csv # Analysis output: Discount impact
-│ ├── monthly_revenue_trend.csv # Analysis output: Monthly growth
-│ └── revenue_seasonality.csv # Analysis output: Seasonal patterns
-├── notebooks/
-│ ├── Ecommerce_ETL_Pipeline.ipynb # Python-based Dimensional Modeling
-│ ├── ML_predict_net_revenue.ipynb # Regression modeling (Revenue)
-│ ├── ML_order_status_prediction.ipynb # Classification modeling (Status)
-│ ├── ML_discount_bands.ipynb # Descriptive ML for discount analysis
-│ └── revenue_time_based_analysis.ipynb # Seasonality and trend analysis
-├── sql/
-│ └── Solved_Business_Problems_(KPIs).sql # SQL queries for primary business KPIs
-└── README.md
-
-
-
-
 ## Requirements & Setup
 This project requires **Python 3.x** and the following core libraries:
 
