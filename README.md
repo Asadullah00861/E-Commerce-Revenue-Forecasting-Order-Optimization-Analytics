@@ -45,7 +45,7 @@ Developed in a hybrid **Jupyter Notebook** and **VS Code** environment, the pred
 - **Order Status Prediction (Classification)**: Predicting whether an order will be successfully completed.  
 - **Analytical Judgment**: Prioritized business utility over algorithmic complexity. Where predictive performance was limited, I evaluated the limitations to ensure analytical maturity.
 
-#### Model Performance ( For Net Revenue Prediction)
+#### Model Performance (For Net Revenue Prediction)
 | Metric | Value |
 |--------|-------|
 | MAE    | 79.99 |
