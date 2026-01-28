@@ -45,12 +45,14 @@ Developed in a hybrid **Jupyter Notebook** and **VS Code** environment, the pred
 - **Order Status Prediction (Classification)**: Predicting whether an order will be successfully completed.  
 - **Analytical Judgment**: Prioritized business utility over algorithmic complexity. Where predictive performance was limited, I evaluated the limitations to ensure analytical maturity.
 
-#### Model Performance (Net Revenue Prediction)
+#### Model Performance ( For Net Revenue Prediction)
 | Metric | Value |
 |--------|-------|
 | MAE    | 79.99 |
 | RMSE   | 114.66 |
 | R² Score | 0.815 |
+
+These results indicate that the model predicts order revenue with strong accuracy and reliability. On average, predictions deviate by about 80 units (MAE), and larger errors are limited (RMSE = 114.66), while an R² score of 0.815 shows that the model explains over 81% of the variation in revenue. Together, these metrics demonstrate that the model can effectively support business decisions such as revenue planning, discount strategy evaluation, and operational forecasting, providing actionable insights to increase revenue and optimize resources.
 
 ---
 
