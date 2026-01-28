@@ -1,0 +1,6 @@
+Payment_Method,payment_id
+UPI,1
+Debit Card,2
+Net Banking,3
+Credit Card,4
+Cash on Delivery,5
