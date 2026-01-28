@@ -1,70 +1,48 @@
-Problem Statement: How can an e-commerce company increase revenue and improve customer retention by understanding purchasing behavior and predicting future order value?
+🚀 E-Commerce Revenue Optimization: End-to-End Analytics
+📖 Project Narrative
+In the modern e-commerce landscape, the ability to convert raw transactional data into high-impact business strategy is a primary competitive advantage. This project chronicles the journey of taking a disorganized e-commerce dataset and transforming it into a predictive powerhouse.
 
+The core goal was to move beyond simple reporting and answer a fundamental business question: "How can we increase revenue and improve customer retention by understanding purchasing behavior and predicting future order value?" By bridging the gap between SQL-based descriptive metrics and Python-powered Machine Learning, this project provides a direct roadmap for increasing revenue and improving operational efficiency.
 
-📖 Project Overview
-This project addresses the challenge of converting large volumes of transactional e-commerce data into actionable business intelligence. It integrates SQL-based descriptive analytics with Python-based predictive modeling to optimize revenue tracking and operational efficiency.
+🎯 Business Objectives
+The analysis was structured around three pillars of company growth:
 
-The workflow spans the entire analytics pipeline: from raw data ingestion and Dimensional Modeling in Python to Predictive Machine Learning for financial and logistical forecasting.
+Revenue Intelligence: Establishing a validated "Single Source of Truth" for financial performance.
+
+Operational Risk Mitigation: Predicting order fulfillment success to minimize logistics waste.
+
+Strategic Marketing: Evaluating if current discount structures drive growth or merely erode margins.
 
 🏗️ Technical Methodology
-Dimensional Modeling (Python)
-To transform raw data into an analytical format, I performed dimensional modeling using Python. This involved merging and engineering multiple transactional datasets into:
+1. Dimensional Modeling (Python-Based ETL)
+Rather than working with raw, flat files, I implemented a Star Schema to optimize the data for professional-grade analytics. Using Python, I engineered:
 
-Fact Tables: Capturing quantitative measures (orders, revenue).
+Fact Tables: fact_orders and fact_sales to capture quantitative transactional measures like orders and revenue.
 
-Dimension Tables: Capturing descriptive context (product attributes, status). The resulting order-level features serve as the foundation for both the SQL KPI layer and the Machine Learning models.
+Dimension Tables: dim_customer, dim_product, dim_date, and dim_payment to provide descriptive attributes like product details and customer status.
 
-SQL Analytics Layer (KPIs)
-I utilized SQL to establish business context and validate data integrity. This layer focuses on establishing the "Single Source of Truth" for the following KPIs:
+2. SQL Analytics Layer (The KPI Framework)
+Using the file Solved_Business_Problems_(KPIs).sql, I established business context and validated data integrity through essential health metrics:
 
-Total Revenue & Net Revenue: Monitoring top-line growth.
+Total & Net Revenue: Monitoring top-line growth and actual earnings.
 
 Order Volume: Tracking transaction density.
 
-Discount Metrics: Analyzing the impact of promotions on final margins.
+Performance Tracking: Validating data integrity before moving into predictive phases.
 
-Machine Learning & Predictive Analytics
-The project leverages Python (Jupyter Notebooks & VS Code) to execute two primary predictive tracks:
+3. Predictive Analytics & Machine Learning
+Developed in a hybrid Jupyter Notebook and VS Code environment, the predictive layer focuses on:
 
-1. Net Revenue per Order (Regression)
+Net Revenue Prediction (Regression): Predicting the expected value of an order to assist with financial and logistical forecasting.
 
-Objective: Predict the expected net revenue of an order.
+Order Status Prediction (Classification): Predicting whether an order will be successfully completed.
 
-Business Value: Facilitates more accurate financial forecasting and cash flow management.
+Analytical Judgment: I prioritized business utility over algorithmic complexity. Where predictive performance was limited, I evaluated the limitations to ensure analytical maturity.
 
-Insight: In cases where predictive performance was weak, I utilized analytical judgment to evaluate the model’s limitations rather than forcing a low-accuracy fit.
+📂 Project Structure
+The following structure illustrates the organization of data, notebooks, and SQL scripts:
 
-2. Order Status Prediction (Classification)
-
-Objective: Predict whether an order will be successfully completed.
-
-Business Value: Identifies potential logistical failures early, allowing for operational intervention.
-
-📈 Analytical Highlights
-Discount Effectiveness Analysis
-Rather than assuming discounts drive positive growth, I conducted a descriptive ML analysis to examine the correlation between discount levels and actual revenue retention. This prevents margin erosion caused by inefficient promotional strategies.
-
-Revenue Trend & Seasonality
-I performed time-based analysis to identify seasonal patterns. These insights support:
-
-Strategic budgeting.
-
-Inventory planning.
-
-Campaign timing.
-
-🧰 Tools & Skills Demonstrated
-Environment: VS Code, Jupyter Notebooks.
-
-Data Engineering: Dimensional modeling and feature engineering in Python.
-
-Database: SQL for KPI calculation and data validation.
-
-Machine Learning: Regression, Classification, and Descriptive ML (Discount Analysis).
-
-Judgment: Evaluating model performance versus business heuristics.
-
-Project Structure
+Plaintext
 
 ├── data/
 │   ├── ecommerce_dataset_updated.csv        # Primary raw dataset
@@ -86,16 +64,11 @@ Project Structure
 ├── sql/
 │   └── Solved_Business_Problems_(KPIs).sql  # SQL queries for primary business KPIs
 └── README.md
-
 ⚙️ Requirements & Setup
-This project requires Python 3.x and the following libraries:
+This project requires Python 3.x and the following core libraries:
 
-pandas & numpy: Data manipulation and Dimensional Modeling.
+Pandas & NumPy: For data manipulation and Dimensional Modeling.
 
-scikit-learn: Predictive modeling (Regression/Classification).
+Scikit-Learn: For predictive modeling and regression.
 
-matplotlib & seaborn: Trend and seasonality visualizations.
-
-
-
-
+Matplotlib & Seaborn: For visualizing trends and analysis outputs.
